@@ -19,4 +19,4 @@ MonoBehaviour:
   mesh: {fileID: 8142484727799629570, guid: 0448a74d7b8c2764ab4cfbbe47019b17, type: 3}
   coveredMeshRegions: 
   armorModifier: 0
-  damageModifier: 0
+  damageModifier: 5

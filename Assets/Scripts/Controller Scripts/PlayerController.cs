@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
+
     Camera _camera;
     public LayerMask _movementMask;
     PlayerMotor _playerMotor;

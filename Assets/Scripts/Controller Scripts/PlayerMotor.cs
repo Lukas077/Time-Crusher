@@ -10,7 +10,6 @@ public class PlayerMotor : MonoBehaviour
     NavMeshAgent _navMeshAgent;
     Transform _target;
 
-    // Start is called before the first frame update
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -20,7 +19,7 @@ public class PlayerMotor : MonoBehaviour
     {
         if (_target != null)
         {
-            _navMeshAgent.SetDestination(_target.position);
+            MoveToPoint(_target.position);
             FaceTarget();
         }
     }

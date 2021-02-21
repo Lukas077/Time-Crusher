@@ -3,6 +3,7 @@
 public class ItemPickup : Interactable
 {
     public Item _item;
+    public Animator _animator;
     public override void Interact()
     {
         base.Interact();
@@ -12,8 +13,8 @@ public class ItemPickup : Interactable
 
     void PickUp()
     {
-
-        Debug.Log("Picking up " + _item.name);
+        _animator.SetBool("Take", true);
+        //Debug.Log("Picking up " + _item.name);
         bool wasPickedUp = Inventory._instance.Add(_item);
 
         if (wasPickedUp)
